@@ -1,0 +1,34 @@
+O que é React?
+
+- Uma biblioteca p/ desenvolvimento de aplicações front-end;
+- Estas aplicações são chamadas de SPA (Single Page Application);
+- Arquitetura baseada em componentes;
+- Pode ser inserido em uma aplicação (CDNs por exemplo) ou podemos criar a aplicação apenas com React;
+- Mantido pela Meta.
+
+O que é o Node.js?
+
+- Uma runtime de JavaScript (uma biblioteca utilizada por um compilador durante a execução do programa);
+- Está construída na V8 engine (escrita em C++) da Google;
+- Possibilita criar softwares em JS no lado do servidor;
+- Enfim, temos um código JS rodando em C++ para garantir alta performance;
+- Download feito no site oficial: nodejs.org;
+- Baixar o arquivio .msi (instalador);
+- npm vem junto do Node;
+- Testar o Node e o npm em um terminal, para validar após a instalação (node -v e npm -v);
+- Os binários precisam estar no PATH;
+- Versão LTS (Long term support), será mantido por bastante tempo (raramente apresentará erros). Versão CURRENT, não muito diferente da LTS, traz todas as últimas adicões da plataforma.
+
+Instalação Node Linux
+
+- Download do Node.js no site oficial: nodejs.org;
+- Verificar a instalação: nodejs -v 
+- Instalação: sudo apt install npm 
+
+O que é NPM?
+
+- É um gerenciador de pacotes do Node;
+- Podemos utilizar bibliotecas de terceiros, baixando pelo npm;
+- Também podemos executar determinados scripts no nosso programa;
+- Dificilmente um software em Node.js não utiliza o npm;
+- Os módulos externos ficam numa pasta chamada node_modules (que deve ser descartável, ou seja, a cada instalação do projeto baixamos todos os pacotes novamente).
