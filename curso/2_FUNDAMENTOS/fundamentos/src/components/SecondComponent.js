@@ -1,8 +1,11 @@
 const SecondComponent = () => {
+  const component = "segundo";
+  const descricao = `Descrição do ${component} componente`;
+
   return (
     <>
       <h1 className={"titulo-second-component"}>Segundo componente</h1>
-      <p>Descrição</p>
+      <p>{descricao}</p>
     </>
   );
 };
