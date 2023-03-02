@@ -47,3 +47,23 @@ Estrutura base
 - src: onde vamos programas as apps
 - src/index.js: arquivo de inicialização do React
 - src/App.js: componente principal da aplicação
+
+Extensão para React
+
+ES7 + React/Redux/React-Native snippets
+Autor: dsznajder
+
+ext install dsznajder.es7-react-js-snippets
+
+https://github.com/ults-io/vscode-react-javascript-snippets/blob/HEAD/docs/Snippets.md
+
+----------------
+
+Emmet -> extensão nativa do VS Code -> ajuda escrever HTML mais rápido
+
+Precisa configurar: File > Settings > procurar por Emmet
+
+Em Emmet: include languages > adicionar item > item: javascript e valor: javascriptreact
+
+
+
