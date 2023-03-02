@@ -1,3 +1,5 @@
+https://github.com/matheusbattisti/curso_react
+
 O que é React?
 
 - Uma biblioteca p/ desenvolvimento de aplicações front-end
@@ -64,6 +66,33 @@ Emmet -> extensão nativa do VS Code -> ajuda escrever HTML mais rápido
 Precisa configurar: File > Settings > procurar por Emmet
 
 Em Emmet: include languages > adicionar item > item: javascript e valor: javascriptreact
+
+----------------
+
+FUNDAMENTOS
+
+- Na maioria dos projetos os componentes ficam na pasta components
+- Geralmente são nomeados como camel case: FirstComponent.js
+- No componente criamos a função e a exportamos para utilizá-lo
+
+JSX
+- É o HTML do React
+- Onde iremos declarar as tags HTML que serão exibidas
+- Ficam dentro do return do componente
+- Temos algumas diferenças do HTML, por exemplo: class será className
+- JSX é JavaScript
+- O JSX pode ter apenas um elemento pai
+
+Comentários
+
+{/* seu comentário aqui */} de dentro do return
+// seu comentário de dentro da função
+
+Template Expressions
+
+- Recurso para executar JS no JSX e também interpolar variáveis
+- sintaxe: { algumCodigoEmJS }
+- Tudo entre chaves é processado em JavaScript e retorna um resultado
 
 
 
