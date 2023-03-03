@@ -7,6 +7,8 @@ import FourthComponent from "./components/FourthComponent";
 import FifthComponent from "./components/FifthComponent";
 import SixthComponent from "./components/SixthComponent";
 import TemplateExpressions from "./components/TemplateExpressions";
+import MyComponent from "./components/MyComponent";
+import Events from "./components/Events"
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
       <FourthComponent />
       <FifthComponent />
       <SixthComponent />
+      <MyComponent />
+      <Events />
     </div>
   );
 }
