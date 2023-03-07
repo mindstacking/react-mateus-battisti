@@ -1,15 +1,13 @@
-import { useState } from "react"
-
-import './App.css';
-import ShowUserName from './components/ShowUserName'
+import CarDetails from "./components/CarDetails";
 
 function App() {
 
-  const [userName] = useState("Antonio")
-
   return (
     <div className="App">
-      <ShowUserName nome="Rogério" sobrenome="Brito dos Santos" idade={40} email={"@" + userName} telefone={"11981584396"} fixo={1129436701}  />
+      <CarDetails marca="BMW" km={1000} cor="vermelho" newCar={false} />
+      <CarDetails marca="Hyundai" km={20000} cor="azul" newCar={true} />
+      <CarDetails marca="Audi A3" km={21000} cor="preto" newCar={true} />
+      <CarDetails marca="Fusca" km={500} cor="bege" newCar={false} />
     </div>
   );
 }
