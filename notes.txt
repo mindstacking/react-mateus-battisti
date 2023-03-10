@@ -176,3 +176,68 @@ Props
 - Bastante útil quando os dados vierem de um banco de dados, por exemplo
 - As props vem num objeto no argumento da função do componente
 
+Desestruturando props
+- É super comum passar mais de uma prop em um componente
+- Para isso usamos o recursos destructuring
+- Se temos duas props: name e age, podemos fazer assim: function MyComponent({name, age})
+- Agora não precisamos mais utilizar props.algumaCoisa
+
+Reutilização de componentes
+- Com props, a reutilização de componentes começa a fazer muito sentido
+- Se temos os dados de 1000 carros por exemplo, podemos reaproveitar o nosso CarDetails 1000 vezes
+- Isso torno o código mais padronizado, facilitando a manutenção
+
+Reutilização com loop
+- Os arrays de dados podem ter muitos itens. O correto é usar o map
+- Com isso conseguimos conciliar os 3 conceitos: renderização de listas, reaproveitamento de componentes e props
+
+React Fragments
+- Os React fragments são interessantes para quando precisamos ter mais de um elemento pai em um componente
+- Criamos uma tag vazia: <> </> Ela serve como elemento pai, não alterando a estrutura do HTML com div, por exemplo
+
+Children prop
+- Children prop é um recurso utilizado para quando um componente precisa ter JSX dentro dele
+- Esse JSX vem do componente pai
+- Então o componente age como um container
+- E children é considerada uma prop do componente
+
+Funções em props
+- As funções podem ser passadas para as props normalmente
+- Basta criar a função no componente pai e enviar como prop para o componente 
+- No componente filho ela pode ser ativada por um evento, por exemplo
+
+Elevação de state
+- Elevação de state ou State lift é quando um valor é elevado do componente filho para o componente pai
+- geralmente temos um componente que usa o state e outro que o altera
+
+CSS Global
+- O CSS global é utilizado para estilizar diversos elementos em comum ou fazer um reset no CSS
+- Utilizamos o index.css para isso
+- Ele está na pasta src
+
+CSS do componente
+- O CSS do componente é utilizado para um componente específico
+- geralmente é criado um arquivo com o mesmo nome do componente
+- Note que este método não é scoped, oue seja, o CSS vaza para outros componentes se houver uma regra em colisão
+- O React já cria um exemplo desta técnica com o App.css/js
+
+Inline style
+- O inline style do React é igual o do CSS
+- Por meio do atributo style conseguimos aplicar regras diretamente em um elemento
+- Devemos optar por outras maneiras de CSS, inline pode dificultar a manutenção ou deixar o código imprevisível em algumas situações
+
+Inline style dinâmico
+- O CSS dinâmico inline aplica estilo baseado em uma condicional
+- Vamos inserir no atributo um if ternário
+- Dependendo da condição podemos mudar que regras de estilo um elemento recebe
+
+Class dinâmicas no CSS
+- Podemos também aplicar lógica para mudar a classe de CSS de um elemento
+- Também utilizaremos o if ternário
+- Essa abordagem é mais interessante que o CSS inline
+- Pois as classes estarão isoladas no arquivo de CSS, resolvendo o problema de organização do código
+
+CSS Modules
+- O CSS Modules é um recurso de CSS scoped, ou seja, ele vai ser EXCLUSIVO do componente
+- O nome do arquivo é: Componente.module.css
+- Também devemos importá-lo no componente

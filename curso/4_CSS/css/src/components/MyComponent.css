@@ -1,0 +1,10 @@
+p {
+    color: green;
+    background-color: #000;
+    padding: 1rem 0;
+}
+
+p.style1 {
+    background-color: rgb(30, 30, 219);
+    color: #ff0;
+}
